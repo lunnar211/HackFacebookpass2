@@ -1,95 +1,167 @@
-# HackFacebookpass2
+<div align="center">
 
-> **⚠️ WARNING:** This tool is for **educational purposes only**.  
+# 🔐 HackFacebookpass2
+
+<img src="https://img.shields.io/badge/Python-3.7%2B-blue?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Platform-Termux%20%7C%20Linux%20%7C%20macOS%20%7C%20Windows-green?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
+<img src="https://img.shields.io/github/stars/lunnar211/HackFacebookpass2?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/github/forks/lunnar211/HackFacebookpass2?style=for-the-badge&logo=github"/>
+
+<br/>
+
+> ### ⚠️ EDUCATIONAL & AUTHORIZED USE ONLY
 > Unauthorized access to any computer system or account is **illegal**.  
-> Only use against accounts you own or have explicit written permission to test.
+> Only use this tool against accounts you **own** or have **explicit written permission** to test.
 
-Originally coded by **MR.K7C8NG** (InDoNeSiA CYBER ErRoR SyStEm).  
-Upgraded to **Python 3** from the original obfuscated Python 2 build.
+<br/>
+
+**Originally coded by MR.K7C8NG — InDoNeSiA CYBER ErRoR SyStEm**  
+🔄 Upgraded to **Python 3** from the original Python 2 build
+
+</div>
 
 ---
 
-## Features
+## 📋 Table of Contents
+
+- [✨ Features](#-features)
+- [🌐 Supported Platforms](#-supported-platforms)
+- [📦 Requirements](#-requirements)
+- [⚙️ Installation](#️-installation)
+- [🚀 Usage](#-usage)
+- [🔧 Troubleshooting](#-troubleshooting)
+- [⚖️ Legal Disclaimer](#️-legal-disclaimer)
+- [📄 License](#-license)
+
+---
+
+## ✨ Features
+
+### 🔑 Login Methods
 
 | Option | Description |
 |--------|-------------|
-| 1. masuk | Login with Facebook email + password (REST API) |
-| 2. Login dengan token | Login using a Facebook access token |
-| 0. keluar | Exit |
+| **1. masuk** | Login with email + password via REST API |
+| **2. Login dengan token** | Login using a valid access token |
+| **0. keluar** | Exit the program |
 
-### After login you can:
-- View account information (name, ID)
-- List friends / get IDs
-- Accept friend requests
-- Delete all friends
-- Other tools:
-  - Create a Facebook post
-  - Generate a password wordlist from personal data
-  - Account checker (reads `user|pass` combo file)
-  - List your groups and save to `out/Grupid.txt`
-  - Activate / deactivate Profile Guard
+### 🛠️ Post-Login Tools
 
----
-
-## Requirements
-
-- **Python 3.7+**
-- **pip** (Python 3 package manager)
-- **requests** library
-- **mechanize** library
+| Feature | Description |
+|---------|-------------|
+| 👤 **Account Info** | View your name, user ID, and profile details |
+| 👥 **Friends Manager** | List friends, get IDs, accept/delete friend requests |
+| 📝 **Create Post** | Publish a post directly from the terminal |
+| 🔑 **Wordlist Generator** | Build a custom password list from personal data |
+| ✅ **Account Checker** | Bulk-check `user\|pass` combo files — results saved to `live.txt` |
+| 🏘️ **Group Lister** | Enumerate all your groups and save IDs to `out/Grupid.txt` |
+| 🛡️ **Profile Guard** | Toggle Facebook Profile Guard on or off |
 
 ---
 
-## Installation
+## 🌐 Supported Platforms
 
-### 1. Install Python 3 and pip
+The tool currently fully supports **Facebook**. The table below shows the current implementation status and planned future support for other major platforms:
 
-**Termux (Android):**
+| Platform | Type | Status |
+|----------|------|--------|
+| ![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=flat&logo=facebook&logoColor=white) | Social Network | ✅ Fully Implemented |
+| ![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white) | Social Network | 🔜 Planned |
+| ![Twitter/X](https://img.shields.io/badge/Twitter%2FX-000000?style=flat&logo=x&logoColor=white) | Microblogging | 🔜 Planned |
+| ![TikTok](https://img.shields.io/badge/TikTok-000000?style=flat&logo=tiktok&logoColor=white) | Video Platform | 🔜 Planned |
+| ![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white) | Professional Network | 🔜 Planned |
+| ![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white) | Video Platform | 🔜 Planned |
+| ![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat&logo=telegram&logoColor=white) | Messaging | 🔜 Planned |
+
+> 🔒 All usage **must** be authorized. Refer to each platform's Terms of Service before any testing.
+
+---
+
+## 📦 Requirements
+
+| Requirement | Minimum Version |
+|-------------|----------------|
+| 🐍 Python | 3.7+ |
+| 📦 pip | Latest |
+| 🌐 requests | Any stable |
+| 🔧 mechanize | Any stable |
+
+---
+
+## ⚙️ Installation
+
+### Step 1 — Install Python 3 and pip
+
+<details>
+<summary>📱 <strong>Termux (Android)</strong></summary>
+
 ```bash
 pkg update && pkg upgrade
 pkg install python
 ```
+</details>
 
-**Debian / Ubuntu:**
+<details>
+<summary>🐧 <strong>Debian / Ubuntu / Kali Linux</strong></summary>
+
 ```bash
 sudo apt update
 sudo apt install python3 python3-pip
 ```
+</details>
 
-**macOS (Homebrew):**
+<details>
+<summary>🍎 <strong>macOS (Homebrew)</strong></summary>
+
 ```bash
 brew install python3
 ```
+</details>
 
-### 2. Clone the repository
+<details>
+<summary>🪟 <strong>Windows</strong></summary>
+
+Download and install Python 3 from [python.org](https://www.python.org/downloads/), making sure to check **"Add Python to PATH"** during setup.
+</details>
+
+---
+
+### Step 2 — Clone the Repository
 
 ```bash
 git clone https://github.com/lunnar211/HackFacebookpass2.git
 cd HackFacebookpass2
 ```
 
-### 3. Install Python dependencies
+### Step 3 — Install Dependencies
 
 ```bash
 pip3 install requests mechanize
 ```
 
-Or using the requirements file (if present):
+Or, if a `requirements.txt` is present:
+
 ```bash
 pip3 install -r requirements.txt
 ```
 
 ---
 
-## Usage
+## 🚀 Usage
 
 ```bash
 python3 SETAN2.py
 ```
 
-You will see the main menu:
+You will see the interactive main menu:
 
 ```
+╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ 
+ ║ ├─┤├┬┘├┴┐───╠╣ ╠╩╗
+═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  versi2
+
 ║--➤ 1. masuk
 ║--➤ 2. Login menggunakan token
 ║--➤ 0. keluar
@@ -97,59 +169,105 @@ You will see the main menu:
 ╚═D R
 ```
 
-Enter a number and press **Enter**.
+> Enter a number and press **Enter** to select an option.
 
-### Login with email/password
+---
 
-1. Select **1**
-2. Enter your Facebook email / ID
-3. Enter your password (hidden input)
-4. If login succeeds, you will enter the feature menu
+### 🔐 Login with Email / Password
 
-### Login with token
+1. Select option **`1`**
+2. Enter your Facebook **email address** or **ID**
+3. Enter your **password** (input is hidden for security)
+4. On success, you will enter the feature menu
 
-1. Select **2**
-2. Paste your Facebook access token when prompted
+---
+
+### 🪙 Login with Access Token
+
+1. Select option **`2`**
+2. Paste your **Facebook access token** when prompted
 3. If the token is valid, you will enter the feature menu
 
-### Account Checker
+> 💡 You can obtain your access token via Facebook developer tools or Graph API explorer.
 
-1. Prepare a text file with credentials (one per line):
+---
+
+### ✅ Account Checker
+
+1. Prepare a combo file (one credential per line):
    ```
    user@example.com|password123
    user2@example.com|secret456
    ```
-2. After logging in, go to **Other → Account Checkers**
-3. Enter the file path and separator character
+2. After logging in, navigate to **Other → Account Checkers**
+3. Enter the file path and the separator character (`|` by default)
 
-Results are saved to `live.txt`.
+📁 Results (valid accounts) are saved to **`live.txt`**
 
 ---
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
-| Problem | Solution |
-|---------|----------|
+| ❌ Problem | ✅ Solution |
+|-----------|------------|
 | `ModuleNotFoundError: No module named 'requests'` | Run `pip3 install requests` |
 | `ModuleNotFoundError: No module named 'mechanize'` | Run `pip3 install mechanize` |
-| `python3: command not found` | Install Python 3 (see Installation section) |
-| Login fails immediately | Facebook may have deprecated the old mobile API endpoint. |
-| `[!] No connection` | Check your internet connection. |
+| `python3: command not found` | Install Python 3 (see [Installation](#️-installation)) |
+| Login fails immediately | The old Facebook mobile API endpoint may be deprecated |
+| `[!] No connection` | Check your internet connection and try again |
+| Script crashes on import | Make sure you are using **Python 3.7+**, not Python 2 |
 
 ---
 
-## Legal Disclaimer
+## ⚖️ Legal Disclaimer
 
-This software is provided for **educational and research purposes only**.  
-The author(s) are **not responsible** for any misuse or damage caused by this program.  
-By using this software, you agree that:
+```
+THIS SOFTWARE IS PROVIDED FOR EDUCATIONAL AND RESEARCH PURPOSES ONLY.
+```
 
-- You will only use it against accounts you own or have explicit permission to test.
-- You understand that unauthorized account access violates laws in most countries (e.g., CFAA in the USA, Computer Misuse Act in the UK, UU ITE in Indonesia).
-- Facebook's Terms of Service prohibit automated access to their platform without permission.
+The author(s) are **not responsible** for any misuse, damage, or legal consequences resulting from the use of this program.
+
+By downloading or using this software, **you agree** that:
+
+- ✅ You will only use it on accounts **you own** or have **explicit written permission** to test.
+- ✅ You understand that unauthorized account access violates laws in most countries:
+  - 🇺🇸 **USA** — Computer Fraud and Abuse Act (CFAA)
+  - 🇬🇧 **UK** — Computer Misuse Act 1990
+  - 🇮🇩 **Indonesia** — UU ITE No. 11/2008
+  - 🇪🇺 **EU** — Directive on Attacks Against Information Systems
+- ✅ You acknowledge that Facebook's **Terms of Service** prohibits unauthorized automated access.
 
 ---
 
-## License
+## 🤝 Contributing
 
-MIT – see [LICENSE](LICENSE) for details.
+Contributions, bug reports, and suggestions are welcome!
+
+1. 🍴 Fork the repository
+2. 🌿 Create a new branch (`git checkout -b feature/your-feature`)
+3. 💾 Commit your changes (`git commit -m 'Add some feature'`)
+4. 📤 Push to the branch (`git push origin feature/your-feature`)
+5. 🔃 Open a **Pull Request**
+
+---
+
+## ⭐ Support the Project
+
+If you find this tool useful for your authorized security research, consider giving it a **⭐ star** on GitHub — it helps others discover the project!
+
+[![GitHub stars](https://img.shields.io/github/stars/lunnar211/HackFacebookpass2?style=social)](https://github.com/lunnar211/HackFacebookpass2/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/lunnar211/HackFacebookpass2?style=social)](https://github.com/lunnar211/HackFacebookpass2/network/members)
+
+---
+
+## 📄 License
+
+**MIT License** — see [LICENSE](LICENSE) for full details.
+
+---
+
+<div align="center">
+
+Made with ❤️ by **MR.K7C8NG** — *InDoNeSiA CYBER ErRoR SyStEm*
+
+</div>
