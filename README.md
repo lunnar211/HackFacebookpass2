@@ -11,6 +11,12 @@
 
 <br/>
 
+[![Website](https://img.shields.io/badge/🌐%20Website-lunnar211.github.io-0A66C2?style=for-the-badge&logoColor=white)](https://lunnar211.github.io)
+[![GitHub](https://img.shields.io/badge/GitHub-lunnar211-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lunnar211)
+[![Profile Views](https://komarev.com/ghpvc/?username=lunnar211&label=Profile+Views&color=0e75b6&style=for-the-badge)](https://github.com/lunnar211)
+
+<br/>
+
 > ### ⚠️ EDUCATIONAL & AUTHORIZED USE ONLY
 > Unauthorized access to any computer system or account is **illegal**.  
 > Only use this tool against accounts you **own** or have **explicit written permission** to test.
@@ -18,7 +24,8 @@
 <br/>
 
 **Originally coded by MR.K7C8NG — InDoNeSiA CYBER ErRoR SyStEm**  
-🔄 Upgraded to **Python 3** from the original Python 2 build
+🔄 Upgraded to **Python 3** from the original Python 2 build  
+👨‍💻 Maintained by **[Dipesh Karki](https://lunnar211.github.io)** — Python Programmer & BCA Student
 
 </div>
 
@@ -268,6 +275,24 @@ If you find this tool useful for your authorized security research, consider giv
 
 <div align="center">
 
-Made with ❤️ by **MR.K7C8NG** — *InDoNeSiA CYBER ErRoR SyStEm*
+### 👨‍💻 About the Maintainer
+
+**Dipesh Karki** — Python Programmer & BCA Student
+
+🌐 **Website:** [lunnar211.github.io](https://lunnar211.github.io)  
+📧 **Email:** [karkimadan48@gmail.com](mailto:karkimadan48@gmail.com)  
+✍️ **Blog:** [learnearnwithonline.blogspot.com](https://learnearnwithonline.blogspot.com)
+
+<br/>
+
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://fb.com/diepsh.karki.1800)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/dipesh.karki__)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/c/technicaldipesh_hacks)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lunnar211)
+
+<br/>
+
+Made with ❤️ by **MR.K7C8NG** — *InDoNeSiA CYBER ErRoR SyStEm*  
+Maintained & upgraded by **[Dipesh Karki](https://lunnar211.github.io)**
 
 </div>
